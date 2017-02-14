@@ -4,9 +4,9 @@ services:
   elastic:
     image: blackikeeagle/elasticsearch:5
     environment:
-      - DOMAIN_NAME=elastic.${BASEHOST:-pimcore.dev}
+      - DOMAIN_NAME=elastic.${BASEHOST:-dev}
 
   elastic-head:
     image: mobz/elasticsearch-head:5-alpine
     environment:
-      - DOMAIN_NAME=elastic-head.${BASEHOST:-pimcore.dev}
+      - DOMAIN_NAME=head.${BASEHOST:-elastic.dev}
