@@ -2,7 +2,7 @@ version: '3'
 
 services:
   elastic:
-    image: blackikeeagle/elasticsearch:5
+    image: dockerwest/elasticsearch:5
     environment:
       - DOMAIN_NAME=elastic.${BASEHOST:-dev}
 
