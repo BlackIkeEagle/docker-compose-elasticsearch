@@ -2,7 +2,8 @@ elasticsearch docker compose
 ============================
 
 Sample docker-compose to use in your projects that use elasticsearch.
-We are using elasticsearch with cors enabled so we can use the head plugin
+
+We are using blacktop/elasticsearch together with elastichq/elasticsearch-hq as gui.
 
 License
 -------

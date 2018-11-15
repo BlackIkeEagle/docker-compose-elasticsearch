@@ -2,11 +2,11 @@ version: '3'
 
 services:
   elastic:
-    image: dockerwest/elasticsearch:5
+    image: blacktop/elasticsearch:6
     environment:
       - DOMAIN_NAME=elastic.${BASEHOST:-dev}
 
-  elastic-head:
-    image: mobz/elasticsearch-head:5-alpine
+  elastic-hq:
+    image: elastichq/elasticsearch-hq
     environment:
-      - DOMAIN_NAME=head.${BASEHOST:-elastic.dev}
+      - DOMAIN_NAME=hq.${BASEHOST:-elastic.dev}
