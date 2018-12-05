@@ -4,9 +4,9 @@ services:
   elastic:
     image: blacktop/elasticsearch:6
     environment:
-      - DOMAIN_NAME=elastic.${BASEHOST:-dev}
+      - DOMAIN_NAME=elastic.${BASEHOST:-docker}
 
   elastic-hq:
     image: elastichq/elasticsearch-hq
     environment:
-      - DOMAIN_NAME=hq.${BASEHOST:-elastic.dev}
+      - DOMAIN_NAME=hq.${BASEHOST:-elastic.docker}
